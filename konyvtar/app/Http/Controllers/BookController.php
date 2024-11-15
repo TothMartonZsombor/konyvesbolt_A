@@ -11,7 +11,7 @@ class BookController extends Book
         return view('book.create');
     }
 
-    public function store(Book $book){
+    public function store(Request $book){
         $book->validate(
             ['book_name' => 'required|string'],
         );

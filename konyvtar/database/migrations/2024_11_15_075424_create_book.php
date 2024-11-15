@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('book_name');
             $table->timestamps();
             $table->softDeletes();
+            
         });
     }
 
