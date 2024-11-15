@@ -11,6 +11,10 @@
         @csrf
         <label for="book_name">Book name:</label>
         <input type="text" name="book_name" id="book_name">
+        <label for="book_name">Book type:</label>
+        <input type="text" name="book_type" id="book_type">
+        <label for="book_name">Book author:</label>
+        <input type="text" name="book_author" id="book_author">
         <button type="submit">Save</button>
     </form>
 </body>
