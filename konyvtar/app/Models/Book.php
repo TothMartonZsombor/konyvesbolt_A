@@ -10,7 +10,7 @@ class Book extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = ['book_name', 'book_szerzo', 'book_kiad'];
+    protected $fillable = ['book_name'];
 
     public function question(){
         return $this->hasMany(Book::class);

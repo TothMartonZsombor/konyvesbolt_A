@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class BookController extends Book
 {
     public function index(){
-        return view('create_book');
+        return view('book.create');
     }
 
     public function store(Book $book){
@@ -17,7 +17,7 @@ class BookController extends Book
         );
 
         Book::create($book->all());
-        return redirect()->back()->with('success', 'Subject stored.');
+        return redirect()->back()->with('success', 'Book stored.');
     }
 
 }
