@@ -15,7 +15,7 @@
         <input type="text" name="book_type" id="book_type">
         <label for="book_name">Book author:</label>
         <input type="text" name="book_author" id="book_author">
-        <button type="submit">Save</button>
+        <button type="submit">Save</button> 
     </form>
 </body>
 </html>
