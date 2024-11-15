@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Librari extends Model
+class Book extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = ['subject_name'];
+    protected $fillable = ['book_name', 'book_szerzo', 'book_kiad'];
 
     public function question(){
-        return $this->hasMany(Librari::class);
+        return $this->hasMany(Book::class);
     }
 }
