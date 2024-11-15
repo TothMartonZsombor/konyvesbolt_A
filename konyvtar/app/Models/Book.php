@@ -15,4 +15,4 @@ class Book extends Model
     public function question(){
         return $this->hasMany(Book::class);
     }
-}
+} 
